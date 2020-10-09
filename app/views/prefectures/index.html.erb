@@ -1,0 +1,5 @@
+<h1>都道府県の一覧<h1>
+	<% @prefectures.each do |prefecture| %>
+	<p><%= prefecture.name %></p>
+<%= link_to '詳細', prefecture_path(prefecture) %> 
+<% end %>
